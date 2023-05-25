@@ -1,15 +1,15 @@
 import classes from './Form.module.css'
 
-function Form({ onSubmit }) {
+function Form({ onSubmit, nameRef, ageRef }) {
   return (
     <form className={classes.form} onSubmit={onSubmit}>
       <div className={classes.formControl}>
         <label htmlFor='name'>Name</label>
-        <input type='text' id='name' />
+        <input ref={nameRef} type='text' id='name' />
       </div>
       <div className={classes.formControl}>
         <label htmlFor='age'>Age</label>
-        <input type='number' id='age' />
+        <input ref={ageRef} type='number' id='age' />
       </div>
       <button>Submit</button>
     </form>
