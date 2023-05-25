@@ -1,10 +1,16 @@
 import Form from './components/Form'
+import UsersList from './components/UsersList'
 import './App.css'
 
 function App() {
+  function submitHandler(event) {
+    event.preventDefault()
+    console.log('Test')
+  }
   return (
     <>
-      <Form />
+      <Form onSubmit={submitHandler} />
+      <UsersList />
     </>
   )
 }

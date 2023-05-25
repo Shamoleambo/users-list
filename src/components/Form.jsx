@@ -1,6 +1,6 @@
-function Form() {
+function Form({ onSubmit }) {
   return (
-    <form>
+    <form onSubmit={onSubmit}>
       <div className='form-control'>
         <label htmlFor='name'>Name</label>
         <input type='text' id='name' />
@@ -9,6 +9,7 @@ function Form() {
         <label htmlFor='age'>Age</label>
         <input type='text' id='age' />
       </div>
+      <button>Submit</button>
     </form>
   )
 }
