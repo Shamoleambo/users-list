@@ -1,0 +1,10 @@
+.ul {
+  display: block;
+  margin: 1rem 0;
+  padding: 1rem 1rem;
+  width: 50%;
+  list-style: none;
+  background-color: azure;
+  border-radius: 6px;
+  font-family: Arial, Helvetica, sans-serif;
+}
