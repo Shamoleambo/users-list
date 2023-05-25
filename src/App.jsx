@@ -14,6 +14,8 @@ function App() {
     const age = ageInputRef.current.value
 
     setUsersList((prevState) => [...prevState, { name, age }])
+    nameInputRef.current.value = ''
+    ageInputRef.current.value = ''
   }
   return (
     <>
