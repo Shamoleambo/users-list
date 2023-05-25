@@ -11,7 +11,7 @@ function App() {
     const name = event.target[0].value
     const age = event.target[1].value
 
-    setUsersList((prevState) => prevState.push({ name, age }))
+    setUsersList((prevState) => [...prevState, { name, age }])
   }
   return (
     <>
