@@ -7,7 +7,7 @@ function Form({ onSubmit }) {
       </div>
       <div className='form-control'>
         <label htmlFor='age'>Age</label>
-        <input type='text' id='age' />
+        <input type='number' id='age' />
       </div>
       <button>Submit</button>
     </form>
