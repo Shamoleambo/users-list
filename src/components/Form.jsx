@@ -1,11 +1,13 @@
+import classes from './Form.module.css'
+
 function Form({ onSubmit }) {
   return (
-    <form onSubmit={onSubmit}>
-      <div className='form-control'>
+    <form className={classes.form} onSubmit={onSubmit}>
+      <div className={classes.formControl}>
         <label htmlFor='name'>Name</label>
         <input type='text' id='name' />
       </div>
-      <div className='form-control'>
+      <div className={classes.formControl}>
         <label htmlFor='age'>Age</label>
         <input type='number' id='age' />
       </div>
